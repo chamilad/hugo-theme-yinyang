@@ -1,7 +1,7 @@
 /* global */
 
 body {
-  font-family: "Arvo", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  font-family: 'Montserrat', "Arvo", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
   margin: 0 20px;
 }
 
@@ -11,17 +11,36 @@ a {
 }
 
 a:hover {
-  font-weight: 600;
   text-decoration: underline;
+}
+
+figcaption {
+  font-size: 11px; 
+  color: #999;
+  margin: auto;
+  text-align: center;
 }
 
 .post-ads {
   margin: 50px 0;
 }
 
+.post-tags {
+  font-size: 11px;
+  text-align: right;
+  width: auto;
+  margin: auto;
+  padding-top: 3px;
+}
+
 /* overwrite github-markdown */
 
+blockquote {
+  background-color: rgb(252, 252, 252);
+}
+
 .markdown-body {
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
 }
 
@@ -34,7 +53,8 @@ a:hover {
 /* header */
 
 .site-title {
-  font-size: 3rem;
+  font-family: Helvetica, "Liberation Sans", sans-serif;
+  font-size: 1.5em;
   margin-top: 32px;
 }
 
@@ -43,8 +63,8 @@ a:hover {
 }
 
 .signatures {
-  font-family: "Permanent Marker", Impact, Charcoal, sans-serif;
-}
+  font-family: 'Montserrat', "Arvo", Helvetica, "Liberation Sans", sans-serif;
+ }
 
 .signatures a {
   text-decoration: none;
@@ -52,7 +72,7 @@ a:hover {
 
 .header-line {
   width: 100%;
-  border-width: 3px;
+  border-width: 1px;
   border-color: #000;
   border-style: solid none none none;
   margin: 18px 0;
@@ -69,7 +89,7 @@ a:hover {
 }
 
 .posts-date, .posts-title {
-  font-size: 1.2rem;
+  font-size: 1em;
 }
 
 .post-line {
@@ -82,8 +102,8 @@ a:hover {
   display: flex;
   justify-content: flex-end;
   padding: 12px 0;
-  border-width: 3px;
-  border-style: solid none;
+  border-width: 1px;
+  border-style: solid none none none;
   border-color: #000;
 }
 
@@ -115,7 +135,7 @@ a:hover {
 
 .post-date {
   font-weight: 800;
-  font-style: italic;
+  font-size: 11px;
 }
 
 .post-author {
@@ -141,14 +161,14 @@ a:hover {
   line-height: 1.6;
   text-align: justify;
   text-justify: ideographic;
-  word-break: break-all;
-  margin-bottom: 1em;
+  word-break: break-word;
+  margin-bottom: 2em;
 }
 
 .releated-content {
-  border-width: 3px;
+  border-width: 1px;
   border-style: solid;
-  border-color: #000;
+  border-color: #bbb;
   padding: 0 10px;
   margin-bottom: 50px;
   margin-top: 100px;
