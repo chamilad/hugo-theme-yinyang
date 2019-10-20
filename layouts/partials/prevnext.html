@@ -1,0 +1,13 @@
+<div class="prev-next row">
+	<div class="prev col-sm">
+	{{if .PrevPage}}
+	<a href="{{.PrevPage.Permalink}}">&lt; {{ .PrevPage.Title }}</a>
+	{{end}}	
+	</div>        
+	<div class="next col-sm">
+	{{if .NextPage}}
+	<a href="{{.NextPage.Permalink}}">{{ .NextPage.Title }} &gt;</a>
+	{{end}}	
+	</div>
+</div>
+

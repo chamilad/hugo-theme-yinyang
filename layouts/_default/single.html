@@ -23,20 +23,21 @@
       {{ if .Params.tags }}
       {{ partial "tags" .Params.tags }}
       {{ end }}
-            <div class="col-xs-6">
-              {{ if .Site.Author.name }}
-              <div class="post-author">
-                <a target="_blank" href="{{ .Site.Author.homepage }}">@{{ .Site.Author.name }}</a>
-              </div>
-              {{ end }}
+             <div class="col-xs-3 reading-time">
+		{{ .ReadingTime }}m {{ .WordCount }} words
             </div>
-          </div>
+         </div>
           {{ end }}
-        </header>
-
+ 	<div class="toc">
+	<hr />
+	{{ .TableOfContents }}
+	<hr />
+	</div>
+       </header>
         <div class="post-content markdown-body">
           {{ .Content }}
         </div>
+	{{ partial "prevnext.html" . }}
         {{ if in site.Params.mainSections .Type }}
 
         {{ partial "related.html" . }}

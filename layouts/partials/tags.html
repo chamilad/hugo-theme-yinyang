@@ -1,4 +1,4 @@
-<div class="post-tags">
+<div class="col-xs-6 post-tags">
 {{ range first 1 . }}
 <a class="subtitle is-6" href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a>
 {{ end }}
