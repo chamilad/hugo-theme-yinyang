@@ -24,12 +24,13 @@
       {{ partial "tags" .Params.tags }}
       {{ end }}
              <div class="col-xs-3 reading-time">
-		{{ .ReadingTime }}m {{ .WordCount }} words
+		{{ .ReadingTime }}m, {{ .WordCount }} words
             </div>
          </div>
           {{ end }}
  	<div class="toc">
 	<hr />
+        <h4>Table of Contents:</h4>
 	{{ .TableOfContents }}
 	<hr />
 	</div>
